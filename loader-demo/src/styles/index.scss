@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn {
+  border: 1px solid rgba(94, 94, 94, 0.24);
+  padding: 4px 8px;
+  border-radius: 100px;
+  color: #aaa;
+  box-shadow: inset 0px 0px 3px 1px #ccc;
+}
+.btn:focus,
+.btn:hover {
+  background-color: #ccc;
+  color: rgb(36, 36, 87);
+}
+
+.container {
+  max-width: 700px;
+}
+
+.head {
+  background-color: rgb(36, 36, 87);
+  .header {
+    padding: 3rem 0;
+    width: 70%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+
+    a {
+      margin: 0 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@import "./modal";
+@import "./loader";
